@@ -1,0 +1,35 @@
+Aula 1:
+
+- Infra as Code
+
+IaC:
+
+	- Vantagens de IaC
+	- AWSCloudFormation vs Terraform
+	- Templates e stacks: 1 template, 1 stack. Exceto se import resource
+	- Template: JSON ou YAML
+	- Stack: Recursos criados a partir do template
+	- IAM: Group and Role
+	- Criação do Bucket
+	- Tags
+	
+	IAM 20:50
+	
+	VPC: Virtual Private Cloud
+		Isolar recursos na nuvem
+		Precisa criar um Internet Gateway para que ele possa se conectar na internet
+		Private Subnet: Rede sem internet dentro da VPC
+		Public Subnet: 
+		NAT Gateway: Conexão da Private Subnet e da Public Subnet
+		Security Group
+		Internet Gateway
+		Route table
+		
+		Normalmente, VPC é gerenciada pela equipe de DevOps
+		
+cluster-belisco.cs5q8ybnktkv.us-east-1.redshift.amazonaws.com:5439/belisco
+Host: cluster-belisco.cs5q8ybnktkv.us-east-1.redshift.amazonaws.com
+Port: 5439
+DB: belisco
+User: admin
+password: Admin1234

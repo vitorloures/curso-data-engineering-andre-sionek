@@ -1,0 +1,19 @@
+{
+  "password": "r3v0phD9S-PT,-kjn0vmb=fPv76Z2-",
+  "dbname": "orders",
+  "engine": "postgres",
+  "port": 5432,
+  "dbInstanceIdentifier": "rds-production-orders-db",
+  "host": "rds-production-orders-db.cdbhrilkwhra.us-east-1.rds.amazonaws.com",
+  "username": "postgres"
+}
+
+guilherme.freitas@ga.ita.br
+vaisefudercachaca
+
+Aula 4:
+
+- Database Migration Service (DMS) - Logminer ou Debezium - Migração do DBMS para DW
+
+Usar DMS para nunca ler dados nos bancos de produção. Isso evita criarmos Locs, que impactam o desempenho do banco de produção. 
+
