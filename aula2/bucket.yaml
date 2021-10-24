@@ -5,7 +5,7 @@ Resources:
   BucketVitaoS3:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: bucket-do-vitao-12-04-1995
+      BucketName: bucket-do-vitao-para-ci
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
@@ -24,4 +24,4 @@ Resources:
   Bucket2BeliscoS3:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: segundo-bucket-belisco-turma-6
+      BucketName: segundo-bucket-belisco-turma-6-ci

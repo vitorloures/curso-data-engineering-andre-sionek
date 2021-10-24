@@ -72,6 +72,7 @@ def create_or_update_stack():
         template_body = f.read()
 
     existing_stacks = get_existing_stacks()
+    logging.info(f"Existing stacks: {existing_stacks}")
 
     if stack_name in existing_stacks:
         logging.info(f'UPDATING STACK {stack_name}')
