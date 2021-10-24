@@ -25,10 +25,10 @@ Resources:
         Version: 2012-10-17
         Statement:
           - Effect: Allow
-              Action:
-                - s3:ListBuckets
-              Resource:
-                - arn:aws:s3:::*
+            Action:
+              - s3:ListBuckets
+            Resource:
+              - arn:aws:s3:::*
           - Effect: Allow
             Action:
               - s3:List*

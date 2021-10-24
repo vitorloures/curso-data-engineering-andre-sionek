@@ -3,7 +3,7 @@ Resources:
   KinesisFirehoseBelisco:
     Type: AWS::KinesisFirehose::DeliveryStream
     Properties:
-      DeliveryStreamName: kinesis-firehose-belisco
+      DeliveryStreamName: kinesis-firehose-vitor-loures
       DeliveryStreamType: DirectPut
       S3DestinationConfiguration:
         BucketARN: !GetAtt KinesisFirehoseBucket.Arn
@@ -23,7 +23,7 @@ Resources:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
               SSEAlgorithm: AES256
-      BucketName: kinesis-firehose-bucket-belisco-turma-6
+      BucketName: kinesis-firehose-bucket-vitor
 
   KinesisRole:
     Type: AWS::IAM::Role

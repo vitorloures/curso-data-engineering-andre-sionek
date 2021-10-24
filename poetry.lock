@@ -1,4 +1,20 @@
 [[package]]
+name = "3"
+version = "0.0.0"
+description = "Hey"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "boto"
+version = "2.49.0"
+description = "Amazon Web Services Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "boto3"
 version = "1.18.48"
 description = "The AWS SDK for Python"
@@ -138,9 +154,16 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b9de9a8c6552f62e0aecae23c214f0ff17d871bd9b546e34c1dc75dce07e9b88"
+content-hash = "8820518c42a9f92604b56eee0c32cc50997813017cd81073aa423149786925c9"
 
 [metadata.files]
+3 = [
+    {file = "3-0.0.0-py3-none-any.whl", hash = "sha256:68f1905e8caac8a9f652591a69705eee30ef9db1b7ac425560ee9aef5e870e59"},
+]
+boto = [
+    {file = "boto-2.49.0-py2.py3-none-any.whl", hash = "sha256:147758d41ae7240dc989f0039f27da8ca0d53734be0eb869ef16e3adcfa462e8"},
+    {file = "boto-2.49.0.tar.gz", hash = "sha256:ea0d3b40a2d852767be77ca343b58a9e3a4b00d9db440efb8da74b4e58025e5a"},
+]
 boto3 = [
     {file = "boto3-1.18.48-py3-none-any.whl", hash = "sha256:c388da7dc1a596755f39de990a72e05cee558d098e81de63de55bd9598cc5134"},
     {file = "boto3-1.18.48.tar.gz", hash = "sha256:7b45b224442c479de4bc6e6e9cb0557b642fc7a77edc8702e393ccaa2e0aa128"},

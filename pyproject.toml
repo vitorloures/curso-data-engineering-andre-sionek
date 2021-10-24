@@ -8,6 +8,8 @@ authors = ["Vitor Loures <vitorf.loures@gmail.com>"]
 python = "^3.8"
 boto3 = "^1.18.48"
 fake-web-events = "^0.2.5"
+boto = "^2.49.0"
+3 = "^0.0.0"
 
 [tool.poetry.dev-dependencies]
 

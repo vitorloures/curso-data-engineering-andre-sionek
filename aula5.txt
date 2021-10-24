@@ -1,0 +1,8 @@
+Comentários bizu do André:
+
+Uso de notebook do Databricks para prototipar, e pycharm para realizar o projeto com controle de versão e testes unitários
+Projeto é exportado como package, e executado com um job no cluster. 
+
+Ver documentação de Airflow operator
+
+

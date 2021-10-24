@@ -33,3 +33,23 @@ Port: 5439
 DB: belisco
 User: admin
 password: Admin1234
+
+Instruções para ingestão de dados via Kinesis
+
+# 1. Criar stack de Infra a partir do arquivo kinesis.yaml.
+    1.1 Selecione o serviço Cloud Formation da AWS
+    1.2 Selecione criar Stack from existing template, e carregue o arquivo kinesis.yaml
+
+# 2. Configurar CLI da AWS para conseguir acessar via código python (lib boto3) com credenciais
+    2.1 Instale CLI segundo as intruções: ```https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html```
+    2.2 Gere Id e chave de acesso para sua conta em: sua_conta -> My security credentials -> Access keys (access key ID and secret access key) -> Create New Access key
+    2.3 Rode no terminal : "aws configure" e insira seu ID, Access Key e region selecionada
+
+# 3. Instalação de bibliotecas
+    3.1 A partir de seu gerenciador de pacotes de preferência e.g.(pip, pipenv, poetry) instale as bibliotecas: "boto 3", "fake-web-events"
+
+# 4. Execute o código insert_records.py
+
+# 5. Vá em Bucket S3 e veja um arquivo .gz com os eventos registrados. E.g. Amazon S3 -> kinesis-firehose-bucket-vitor -> atomic-events/landing-date=2021-10-23/
+
+
