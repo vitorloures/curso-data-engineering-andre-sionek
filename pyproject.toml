@@ -11,6 +11,8 @@ fake-web-events = "^0.2.5"
 boto = "^2.49.0"
 3 = "^0.0.0"
 pytest = "^6.2.5"
+Jinja2 = "^3.0.2"
+PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
 

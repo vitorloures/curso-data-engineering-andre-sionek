@@ -29,6 +29,15 @@ Tópicos tratados em aula:
 ## Github Actions
 
 - Organização privada possui 2000 min/mês incluso de deploy
+- Ferramenta do Github para fazer testes automatizados, rodar scripts, fazer deploy, e gerenciamento de senhas.
+
+--
+## Jinja
+
+- Jinja é uma ferramenta para template web em python
+- Casos de uso: (inserção de variáveis)
+    1. Setup de diferentes ambientes
+    2. Substituição de credenciais durante a execução ou deploy
 
 Nosso CI deve rodar o código em dev num servidor para isso e avaliar segundo um resultado esperado
 
