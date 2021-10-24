@@ -19,10 +19,9 @@ def create_stack(stack_name, template_body, **kwargs):
         TemplateBody=template_body,
         Capabilities=['CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM'],
         TimeoutInMinutes=5,
-        OnFailure='ROLLBACK_COMPLETE'
+        OnFailure='ROLLBACK'
     )
 
-    # Wait until stack creation finishes
     cloudformation_client.get_waiter('stack_create_complete').wait(
         StackName=stack_name,
         WaiterConfig={'Delay': 5, 'MaxAttempts': 600}
@@ -72,7 +71,6 @@ def create_or_update_stack():
         template_body = f.read()
 
     existing_stacks = get_existing_stacks()
-    logging.info(f"Existing stacks: {existing_stacks}")
 
     if stack_name in existing_stacks:
         logging.info(f'UPDATING STACK {stack_name}')
