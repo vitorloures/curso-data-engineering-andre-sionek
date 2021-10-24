@@ -19,7 +19,7 @@ def create_stack(stack_name, template_body, **kwargs):
         TemplateBody=template_body,
         Capabilities=['CAPABILITY_IAM', 'CAPABILITY_NAMED_IAM'],
         TimeoutInMinutes=5,
-        OnFailure='ROLLBACK'
+        OnFailure='ROLLBACK_COMPLETE'
     )
 
     # Wait until stack creation finishes
@@ -68,10 +68,11 @@ def _get_abs_path(path):
 
 def create_or_update_stack():
     stack_name = 's3-bucket-ci'
-    with open(_get_abs_path('bucket.yaml')) as f:
+    with open(_get_abs_path('aula2/bucket.yaml')) as f:
         template_body = f.read()
 
     existing_stacks = get_existing_stacks()
+    logging.info(f"Existing stacks: {existing_stacks}")
 
     if stack_name in existing_stacks:
         logging.info(f'UPDATING STACK {stack_name}')
