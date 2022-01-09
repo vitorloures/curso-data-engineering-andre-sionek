@@ -1,7 +1,7 @@
 # Aula 4: Transformação de dados com PySpark
 
 Tópicos tratados em aula:
-- Criação de cluster EMR no IaC
+- Criação de cluster EMR em IaC
 - Change Data Capture (CDC)
 - Técnicas de replicação de banco de dados
 - AWS GLUE e ATHENA
@@ -81,6 +81,17 @@ em mini-Batches, não streaming, de fato.
 Para o processamento em streaming, precisamos de antemão, especificar o esquema. 
 O Stream salva um arquivo checkpoint, onde mostra o que já foi, e o que não foi 
 processado. Isso ajuda na recuperação no caso de falhas. 
+
+### Comparação DataBricks e EMR:
+
+(https://www.confessionsofadataguy.com/databricks-vs-aws-emr-theory-and-real-life/)
+
+TL;DR:
+
+- Making using Spark at scale so easy anyone can do it. 
+- Provide less technical people access to the power of Spark at scale. Think DS and other Analysts via Notebooks.
+- Provide built in Data Warehouse support (Delta Lake).
+- Provide tools for developers to make life easy. (APIs, Integrations, features.)
 
 ---
 
